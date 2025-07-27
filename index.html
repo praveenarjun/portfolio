@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Praveen Challa | Data & ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        .glass-effect {
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .skill-card, .project-card, .exp-card, .cert-card {
+            background-color: #111827;
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover, .project-card:hover, .exp-card:hover, .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+        }
+        .accent-color { color: #2dd4bf; }
+        .accent-bg { background-color: #2dd4bf; }
+        .accent-border { border-color: #2dd4bf; }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section-title span {
+            color: #2dd4bf;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider">
+                Sree Praveen <span class="accent-color">Challa</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:accent-color transition-colors duration-300">About</a>
+                <a href="#projects" class="hover:accent-color transition-colors duration-300">Projects</a>
+                <a href="#experience" class="hover:accent-color transition-colors duration-300">Experience</a>
+                <a href="#skills" class="hover:accent-color transition-colors duration-300">Skills</a>
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:accent-color">About</a>
+            <a href="#projects" class="block py-2 hover:accent-color">Projects</a>
+            <a href="#experience" class="block py-2 hover:accent-color">Experience</a>
+            <a href="#skills" class="block py-2 hover:accent-color">Skills</a>
+            <a href="#contact" class="block mt-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-20 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Data Engineer & <br>
+                        <span class="accent-color">ML Enthusiast</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-300 max-w-xl mx-auto md:mx-0">
+                        Building scalable data pipelines and intelligent systems. Passionate about leveraging big data technologies and machine learning to solve real-world problems. Seeking to contribute to a challenging role in Singapore's tech ecosystem.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="https://github.com/praveenarjun" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="praveen_resume (1).pdf" download="SreePraveenChalla_Resume.pdf" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                            <i data-lucide="download"></i>
+                            <span>My Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <!-- Placeholder for a professional photo. Replace the URL with your actual photo URL -->
+                    <div class="w-72 h-72 md:w-80 md:h-80 rounded-full bg-gray-800 border-4 border-teal-500/50 flex items-center justify-center overflow-hidden">
+                         <img src="https://placehold.co/400x400/111827/2dd4bf?text=SPC" alt="Sree Praveen Challa" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="max-w-4xl mx-auto text-center text-slate-300 text-lg leading-relaxed">
+                    <p>
+                        I am a highly motivated and results-driven Computer Science student with a 9.75/10 CGPA from Bennett University and international experience from INTI International University, Malaysia. My passion lies at the intersection of Big Data, Cloud Computing, and Machine Learning.
+                    </p>
+                    <p class="mt-4">
+                        Through internships at NIT Warangal and IIT Delhi, I've developed practical skills in Federated Learning for IoT, real-time object tracking, and building robust AI models. My project on a Real Estate Big Data Pipeline demonstrates my ability to design and implement end-to-end data systems using Kafka, Cassandra, and Docker. I am a certified AWS Cloud Practitioner and OCI GenAI Professional, always eager to learn and apply new technologies to create impactful solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: Big Data Pipeline -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Real Estate Big Data Pipeline</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">An end-to-end ETL pipeline processing over 100K property records. Used Kafka for real-time streaming, Cassandra for storage, and an LLM for synthetic data generation to enhance market forecasting.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Kafka</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Cassandra</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Docker</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">LLM</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Python</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun/Real-Estate-Big-Data-pipeline" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <!-- Project 2: EEG Research -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">EEG-Based Emotion & Drowsiness Detection</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">A dual-framework research project for recognizing human emotion and detecting drowsiness from EEG data. This work, submitted to a peer-reviewed journal, has critical applications in real-world safety systems.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">AI/ML</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">TensorFlow</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">LSTM</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Signal Processing</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View Research <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <!-- Project 3: Federated Learning -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">Federated Learning for IoT Anomaly Detection</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Developed privacy-preserving federated learning models for real-time IoT anomaly detection. Achieved a 15% increase in detection accuracy while integrating blockchain protocols to reduce data breach risks by 20%.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Federated Learning</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">IoT</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Blockchain</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">XAI</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <!-- Project 4: ShopSphere -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">ShopSphere E-Commerce App</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">A full-stack e-commerce application with role-based authentication, secure APIs, and persistent shopping cart functionality using JWT for secure sessions.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">React</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Redux</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Node.js</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">JWT</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <!-- Project 5: QuickCart -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">QuickCart Visitor Management</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Designed a system with dashboards and secure check-in/out features for managing real-time visitor flow, including visit rescheduling and access control for office spaces.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">React TS</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Node.js</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">MongoDB</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Express</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <!-- Project 6: TV & Recipe Finder -->
+                    <div class="project-card rounded-lg p-6 flex flex-col">
+                        <h3 class="text-xl font-bold accent-color">TVSearch & Meal Recipe Finder</h3>
+                        <p class="text-slate-400 mt-2 flex-grow">Built two API-based search applications with lazy loading and dynamic routing for a seamless user experience, managing state for over 1000 TV shows and meals.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">React</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Redux Toolkit</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">REST APIs</span>
+                            <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-slate-300 mr-2 mb-2">Lazy Loading</span>
+                        </div>
+                        <a href="https://github.com/praveenarjun" target="_blank" class="mt-4 inline-flex items-center font-semibold text-teal-400 hover:text-teal-300">
+                            View on GitHub <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Work <span>Experience</span></h2>
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+
+                    <!-- Item 1 -->
+                    <div class="relative mb-8">
+                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full mt-1.5"></div>
+                        <div class="exp-card rounded-lg p-6 w-full md:w-5/12 md:ml-[54%]">
+                            <p class="text-sm text-slate-400">Apr 2024 - Present</p>
+                            <h3 class="text-lg font-bold">AI/ML Research Intern</h3>
+                            <p class="font-semibold text-slate-300">NIT Warangal</p>
+                            <p class="text-sm mt-2 text-slate-400">Developed federated learning models for IoT, enhancing data privacy and accuracy.</p>
+                        </div>
+                    </div>
+                     <!-- Item 2 -->
+                    <div class="relative mb-8 flex justify-end">
+                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full mt-1.5"></div>
+                        <div class="exp-card rounded-lg p-6 w-full md:w-5/12 md:mr-[54%]">
+                            <p class="text-sm text-slate-400">May 2024 - Present</p>
+                            <h3 class="text-lg font-bold">Frontend Intern</h3>
+                            <p class="font-semibold text-slate-300">Quantum AI, Malaysia</p>
+                            <p class="text-sm mt-2 text-slate-400">Engineered responsive UI components with React & TypeScript, decreasing load times by 30%.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="relative mb-8">
+                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full mt-1.5"></div>
+                        <div class="exp-card rounded-lg p-6 w-full md:w-5/12 md:ml-[54%]">
+                            <p class="text-sm text-slate-400">June - Aug 2023</p>
+                            <h3 class="text-lg font-bold">ML Intern</h3>
+                            <p class="font-semibold text-slate-300">1.stop @ IIT Delhi</p>
+                            <p class="text-sm mt-2 text-slate-400">Implemented a real-time object tracking system with OpenCV, improving frame rate by 25%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div class="skill-card rounded-lg p-4 text-center">Java</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Python</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Spring Boot</div>
+                    <div class="skill-card rounded-lg p-4 text-center">JavaScript/TS</div>
+                    <div class="skill-card rounded-lg p-4 text-center">React</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Node.js</div>
+                    <div class="skill-card rounded-lg p-4 text-center">TensorFlow</div>
+                    <div class="skill-card rounded-lg p-4 text-center">OpenCV</div>
+                    <div class="skill-card rounded-lg p-4 text-center accent-bg text-gray-900 font-bold">Apache Kafka</div>
+                    <div class="skill-card rounded-lg p-4 text-center accent-bg text-gray-900 font-bold">Docker</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Cassandra</div>
+                    <div class="skill-card rounded-lg p-4 text-center">MongoDB</div>
+                    <div class="skill-card rounded-lg p-4 text-center">MySQL</div>
+                    <div class="skill-card rounded-lg p-4 text-center">AWS</div>
+                    <div class="skill-card rounded-lg p-4 text-center">OCI</div>
+                    <div class="skill-card rounded-lg p-4 text-center">Git</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications -->
+        <section id="certifications" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title"><span>Certifications</span></h2>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="cert-card rounded-lg p-6 flex items-center space-x-4">
+                        <div class="accent-bg p-3 rounded-full"><i data-lucide="award"></i></div>
+                        <div>
+                            <h3 class="font-bold">OCI 2024 GenAI Certified Professional</h3>
+                            <p class="text-sm text-slate-400">Oracle Cloud</p>
+                        </div>
+                    </div>
+                    <div class="cert-card rounded-lg p-6 flex items-center space-x-4">
+                        <div class="accent-bg p-3 rounded-full"><i data-lucide="cloud"></i></div>
+                        <div>
+                            <h3 class="font-bold">AWS Cloud Practitioner</h3>
+                            <p class="text-sm text-slate-400">Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="cert-card rounded-lg p-6 flex items-center space-x-4">
+                        <div class="accent-bg p-3 rounded-full"><i data-lucide="brain-circuit"></i></div>
+                        <div>
+                            <h3 class="font-bold">NLP with Attention Models</h3>
+                            <p class="text-sm text-slate-400">Coursera</p>
+                        </div>
+                    </div>
+                    <div class="cert-card rounded-lg p-6 flex items-center space-x-4">
+                        <div class="accent-bg p-3 rounded-full"><i data-lucide="server"></i></div>
+                        <div>
+                            <h3 class="font-bold">Spring Boot Microservices</h3>
+                            <p class="text-sm text-slate-400">Coursera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="max-w-2xl mx-auto text-slate-300 mb-8">
+                    I'm actively looking for Data Analyst, Data Engineer, and ML Engineer roles in Singapore. I'd love to hear about new opportunities. Let's connect!
+                </p>
+                <a href="mailto:sreepraveenchalla@gmail.com" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold text-lg py-4 px-8 rounded-lg transition-colors duration-300">
+                    sreepraveenchalla@gmail.com
+                </a>
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/sreepraveen-challa/" target="_blank" class="text-slate-400 hover:accent-color"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                    <a href="https://github.com/praveenarjun" target="_blank" class="text-slate-400 hover:accent-color"><i data-lucide="github" class="w-8 h-8"></i></a>
+                    <a href="https://leetcode.com/u/sreepraveenchalla/" target="_blank" class="text-slate-400 hover:accent-color"><i data-lucide="code" class="w-8 h-8"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-400">
+            <p>&copy; 2024 Sree Praveen Challa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const href = this.getAttribute('href');
+                
+                // Handle the case for the top link
+                if (href === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return; 
+                }
+
+                const targetElement = document.querySelector(href);
+
+                if (targetElement) {
+                    // We need to account for the fixed header height
+                    const headerOffset = document.getElementById('header').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
